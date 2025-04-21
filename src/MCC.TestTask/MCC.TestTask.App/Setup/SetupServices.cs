@@ -22,7 +22,7 @@ public static class SetupServices
     {
         services.AddScoped<PasswordHasher<User>>(provider => new PasswordHasher<User>());
         services.AddScoped<TokenService>();
-        services.AddSingleton<SessionService>();
+        services.AddScoped<SessionService>();
         services.AddScoped<UserService>();
         services.AddScoped<UserAccessor>();
         services.AddScoped<CommunityService>();

@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\features\\posts\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\features\\posts\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\features\\sessions\\sessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\features\\sessions\\sessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\features\\sessions\\dto\\sessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\features\\sessions\\dto\\sessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\services\\auth\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\services\\auth\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\setup\\setupservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\setup\\setupservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PostService.cs",
-              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Features\\Posts\\PostService.cs",
-              "RelativeDocumentMoniker": "MCC.TestTask.App\\Features\\Posts\\PostService.cs",
-              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Features\\Posts\\PostService.cs",
-              "RelativeToolTip": "MCC.TestTask.App\\Features\\Posts\\PostService.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "SessionDto.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Features\\Sessions\\Dto\\SessionDto.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Features\\Sessions\\Dto\\SessionDto.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Features\\Sessions\\Dto\\SessionDto.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Features\\Sessions\\Dto\\SessionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T15:26:30.314Z",
+              "WhenOpened": "2025-04-21T17:52:31.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SetupServices.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Setup\\SetupServices.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Setup\\SetupServices.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Setup\\SetupServices.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Setup\\SetupServices.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:50:53.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SessionsController.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Features\\Sessions\\SessionsController.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Features\\Sessions\\SessionsController.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Features\\Sessions\\SessionsController.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Features\\Sessions\\SessionsController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:37:50.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Services\\Auth\\SessionService.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Services\\Auth\\SessionService.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Services\\Auth\\SessionService.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Services\\Auth\\SessionService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:37:49.527Z",
               "EditorCaption": ""
             }
           ]

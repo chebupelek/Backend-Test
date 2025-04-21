@@ -1,72 +1,88 @@
 ﻿using MCC.TestTask.Infrastructure;
 using FluentResults;
+using System;
+using MCC.TestTask.Persistance;
+using Microsoft.EntityFrameworkCore;
+using MCC.TestTask.Domain;
 
 namespace MCC.TestTask.App.Services.Auth;
 
 public class SessionService
 {
-    private readonly List<Session> _sessions = [];
+    private readonly BlogDbContext _blogDbContext;
+
+    public SessionService(BlogDbContext blogDbContext)
+    {
+        _blogDbContext = blogDbContext;
+    }
 
     public IList<Session> GetSessions(Guid userId)
     {
-        _sessions.RemoveAll(s => s.ExpiresAfter < DateTime.UtcNow);
-        return _sessions.Where(s => s.UserId == userId).ToList();
+        var now = DateTime.UtcNow;
+        var expiredSessions = _blogDbContext.Sessions.Where(s => s.ExpiresAfter < now);
+        _blogDbContext.Sessions.RemoveRange(expiredSessions);
+        _blogDbContext.SaveChanges();
+
+        return _blogDbContext.Sessions
+            .Where(s => s.UserId == userId && s.ExpiresAfter > now)
+            .ToList();
     }
 
     public Result<Session> GetSession(Guid sessionId)
     {
-        _sessions.RemoveAll(s => s.ExpiresAfter < DateTime.UtcNow);
-        var session = _sessions.FirstOrDefault(s => s.Id == sessionId);
+        var now = DateTime.UtcNow;
+        var expiredSessions = _blogDbContext.Sessions.Where(s => s.ExpiresAfter < now);
+        _blogDbContext.Sessions.RemoveRange(expiredSessions);
+        _blogDbContext.SaveChanges();
+
+        var session = _blogDbContext.Sessions.FirstOrDefault(s => s.Id == sessionId && s.ExpiresAfter > DateTime.UtcNow);
         return session != null ? Result.Ok(session) : CustomErrors.NotFound("Session not found");
     }
 
     public Session CreateNewSession(Guid userId, TimeSpan lifetime)
     {
-        var sessionId = Guid.NewGuid();
-        while (_sessions.Any(s => s.Id == sessionId))
-            sessionId = Guid.NewGuid();
+        var session = new Session
+        {
+            Id = Guid.NewGuid(),
+            UserId = userId,
+            ExpiresAfter = DateTime.UtcNow.Add(lifetime)
+        };
 
-        var session = new Session { Id = sessionId, UserId = userId, ExpiresAfter = DateTime.UtcNow.Add(lifetime) };
-        _sessions.Add(session);
+        _blogDbContext.Sessions.Add(session);
+        _blogDbContext.SaveChanges();
+
         return session;
     }
 
     public Result DeleteSession(Guid sessionId, Guid userId)
     {
-        var session = _sessions.FirstOrDefault(s => s.Id == sessionId);
-        if (session == null || session.UserId != userId)
+        var session = _blogDbContext.Sessions.FirstOrDefault(s => s.Id == sessionId && s.UserId == userId);
+        if (session == null)
             return CustomErrors.NotFound("Session not found");
 
-        _sessions.Remove(session);
+        _blogDbContext.Sessions.Remove(session);
+        _blogDbContext.SaveChanges();
+
         return Result.Ok();
     }
 
     public void ClearSessions(Guid userId)
     {
-        _sessions.RemoveAll(s => s.UserId == userId);
+        var userSessions = _blogDbContext.Sessions.Where(s => s.UserId == userId);
+        _blogDbContext.Sessions.RemoveRange(userSessions);
+        _blogDbContext.SaveChanges();
     }
 
     public Result UpdateRefreshToken(Guid sessionId, string refreshToken, DateTime expiresAt)
     {
-        var session = _sessions.FirstOrDefault(s => s.Id == sessionId);
+        var session = _blogDbContext.Sessions.FirstOrDefault(s => s.Id == sessionId);
         if (session == null)
             return CustomErrors.NotFound("Session not found");
 
         session.RefreshToken = refreshToken;
         session.ExpiresAfter = expiresAt;
+
+        _blogDbContext.SaveChanges();
         return Result.Ok();
     }
-}
-
-public class Session
-{
-    public Guid Id { get; set; }
-
-    public Guid UserId { get; set; }
-
-    public string LastIp { get; set; }
-
-    public string? RefreshToken { get; set; }
-
-    public DateTime ExpiresAfter { get; set; }
 }
