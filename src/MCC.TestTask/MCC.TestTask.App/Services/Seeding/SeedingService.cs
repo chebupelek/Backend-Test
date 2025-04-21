@@ -57,7 +57,7 @@ public class SeedingService(
         if(!dbContext.Tags.Any())
             for (var i = 0; i < 100; i++)
             {
-                var tag = await tagService.CreateTag("Tag #" + i);
+                var tag = await tagService.CreateTag(acUser.Id, "Tag #" + i);
                 tagIds.Add(tag.Value);
             }
 

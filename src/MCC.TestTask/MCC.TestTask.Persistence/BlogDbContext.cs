@@ -19,6 +19,8 @@ public class BlogDbContext : DbContext
 
     public virtual DbSet<Tag> Tags { get; set; }
 
+    public virtual DbSet<Session> Sessions {  get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
@@ -31,7 +33,10 @@ public class BlogDbContext : DbContext
         builder.Entity<Post>().HasOne(p => p.Author).WithMany();
         builder.Entity<Post>().HasMany(p => p.LikedBy).WithMany();
         builder.Entity<Post>().HasMany(p => p.Tags).WithMany();
+        builder.Entity<Post>().HasIndex(p => p.ReadingTime);
                     
         builder.Entity<Comment>().HasMany(c => c.Replies).WithOne(r => r.Parent);
+
+        builder.Entity<Tag>().HasOne(t => t.Creator).WithMany();
     }
 }

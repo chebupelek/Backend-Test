@@ -19,9 +19,11 @@ public class MailJobService
 
     public Result NotifySubscribersAboutNewPost(Guid postId)
     {
-        return Result.Ok(); // doesn't work anyway, fix it later
-        
+        //return Result.Ok();
+
         var post = _blogDbContext.Posts
+            .Include(p => p.Community)
+                .ThenInclude(c => c.Subscribers)
             .FirstOrDefault(p => p.Id == postId && p.Community != null);
 
         if (post == null)
