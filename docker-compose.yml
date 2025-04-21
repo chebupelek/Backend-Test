@@ -13,7 +13,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      
+
   postgres-hangfire:
     image: postgres:latest
     container_name: postgres_hangfire_container
@@ -26,6 +26,14 @@ services:
       - "5433:5432"
     volumes:
       - postgres_hangfire_data:/var/lib/postgresql/data
+
+  # mailhog:
+  #   image: mailhog/mailhog
+  #   container_name: mailhog
+  #   restart: always
+  #   ports:
+  #     - "1025:1025"
+  #     - "8025:8025"
 
 volumes:
   postgres_data:
