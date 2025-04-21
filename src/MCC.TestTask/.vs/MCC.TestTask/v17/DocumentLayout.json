@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\services\\mail\\mailjobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\services\\mail\\mailjobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\services\\mail\\mailingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\services\\mail\\mailingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\features\\posts\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\features\\posts\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\services\\seeding\\seedingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\services\\seeding\\seedingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\setup\\setupservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\setup\\setupservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|c:\\users\\misti\\documents\\github\\backend-test\\src\\mcc.testtask\\mcc.testtask.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F24371C6-C6DC-4467-BB76-7CC1842B713B}|MCC.TestTask.App\\MCC.TestTask.App.csproj|solutionrelative:mcc.testtask.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Features\\Posts\\PostService.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Features\\Posts\\PostService.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Features\\Posts\\PostService.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Features\\Posts\\PostService.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAIA4wJ0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T14:27:13.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MailingService.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Services\\Mail\\MailingService.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Services\\Mail\\MailingService.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Services\\Mail\\MailingService.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Services\\Mail\\MailingService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T14:28:36.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SetupServices.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Setup\\SetupServices.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Setup\\SetupServices.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Setup\\SetupServices.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Setup\\SetupServices.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAMwCQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T14:21:40.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Program.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Program.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Program.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T14:21:18.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeedingService.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Services\\Seeding\\SeedingService.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Services\\Seeding\\SeedingService.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Services\\Seeding\\SeedingService.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Services\\Seeding\\SeedingService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwB8AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T14:18:03.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MailJobService.cs",
+              "DocumentMoniker": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Services\\Mail\\MailJobService.cs",
+              "RelativeDocumentMoniker": "MCC.TestTask.App\\Services\\Mail\\MailJobService.cs",
+              "ToolTip": "C:\\Users\\misti\\Documents\\GitHub\\Backend-Test\\src\\MCC.TestTask\\MCC.TestTask.App\\Services\\Mail\\MailJobService.cs",
+              "RelativeToolTip": "MCC.TestTask.App\\Services\\Mail\\MailJobService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T13:56:04.216Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
