@@ -1,4 +1,5 @@
 ﻿using MCC.TestTask.App.Services.Auth;
+using MCC.TestTask.Domain;
 
 namespace MCC.TestTask.App.Features.Sessions.Dto;
 
