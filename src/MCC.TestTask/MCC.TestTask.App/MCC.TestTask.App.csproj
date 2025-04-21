@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MCC.TestTask.Domain\MCC.TestTask.Domain.csproj"/>
+        <ProjectReference Include="..\MCC.TestTask.Persistence\MCC.TestTask.Persistence.csproj"/>
+        <ProjectReference Include="..\MCC.TestTask.Infrastructure\MCC.TestTask.Infrastructure.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentResults" Version="3.16.0"/>
+        <PackageReference Include="FluentResults.Extensions.AspNetCore" Version="0.1.0"/>
+        <PackageReference Include="Hangfire.AspNetCore" Version="1.8.17"/>
+        <PackageReference Include="Hangfire.PostgreSql" Version="1.20.10"/>
+        <PackageReference Include="MailKit" Version="4.9.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="NeinLinq.EntityFrameworkCore" Version="7.2.0"/>
+        <PackageReference Include="Npgsql" Version="9.0.2"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.0.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.0.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.0.0"/>
+    </ItemGroup>
+
+</Project>
